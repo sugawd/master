@@ -42,7 +42,10 @@ public class Configuration extends ResourceSupport {
 	
 	@Override
 	public int hashCode() {
-		return key.hashCode();
+		final int prime = 31;
+		int result = super.hashCode();
+		result = prime * result + ((key == null) ? 0 : key.hashCode());
+		return result;
 	}
 
 	@Override
